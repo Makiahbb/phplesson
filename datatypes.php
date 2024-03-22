@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stuart</title>
+    <title>Minions</title>
 </head>
 <body>
 <?php
@@ -16,7 +16,7 @@
        
        //Array
        $names = array("Kevin","Bob","Stuart");
-       echo $names['1']
+       echo $names['2']
     ?>
 </body>
 </html>
