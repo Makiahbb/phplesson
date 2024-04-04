@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "phplesson",
+			"path": "."
+		},
+		{
+			"name": "includes",
+			"path": "../includes"
+		}
+	],
+	"settings": {}
+}
