@@ -1,5 +1,12 @@
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navigate to:</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +41,28 @@
         <li class="nav-item">
           <a class="nav-link" href="operators.php">operators</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="includes\header.php">Head</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="superglobals.php">SupGlobals</a>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
+</head>
+<body>
+  <?php
+  $_SESSION['username'] = "Augh9365!";
+echo $_SESSION['username'];
+
+  if (!isset($_SESSION['username'])) {
+    echo "You are not logged in!";
+  }
+    else {
+      echo "You are logged in!";
+    }
+  ?>
+</body>
+</html>
