@@ -6,7 +6,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navigate to:</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,12 +40,6 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="operators.php">operators</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="includes\header.php">Head</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="superglobals.php">SupGlobals</a>
         </li>
       </ul>
     </div>
