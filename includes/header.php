@@ -58,5 +58,13 @@ echo $_SESSION['username'];
       echo "You are logged in!";
     }
   ?>
+<?php
+ $dbServername = "localhost";
+$dbUsername = "root";
+$dbPassword = "";
+$dbName ="loginsystem";
+
+$conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
+?>
 </body>
 </html>
