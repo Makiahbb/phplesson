@@ -41,6 +41,9 @@
         <li class="nav-item">
           <a class="nav-link" href="operators.php">operators</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.php">contacts</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -66,5 +69,17 @@ $dbName ="loginsystem";
 
 $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
 ?>
+
+<?php
+  $sql = "SELECT * FROM users;";
+  $result = mysqli_query($conn, $sql);
+  $resultCheck = mysqli_num_rows($results);
+
+  if ($resultsCheck > 0) {
+    while ($row = mysqli_fetch_assoc($result)) {
+      echo $row['user_uid'] . "<br>";
+    }
+  }
+  ?>
 </body>
 </html>
