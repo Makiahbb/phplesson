@@ -8,6 +8,19 @@
   <link rel="stylesheet" href="style.css">
   </head>
   <body>
+  //login code  
+  <main>
+      <div class="wrapper-main">
+        <section class="section-default">
+          <?php
+          if(condition) {
+
+          }
+          ?>
+          <p class="login-status">You are logged out!</p>
+          <p class="login-status">You are logged in!</p>
+      </div>
+    </main> 
   <?php
   include "includes/header.php";
   ?>
@@ -24,5 +37,6 @@
        $name = $_GET['person'];
         echo $name." has stabbed Carl 37 times in the chest.";
     ?>
+
     </body>
 </html>
