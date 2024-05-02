@@ -8,13 +8,15 @@
   <link rel="stylesheet" href="style.css">
   </head>
   <body>
-  //login code  
   <main>
       <div class="wrapper-main">
         <section class="section-default">
           <?php
-          if(condition) {
-
+          if(isset($_SESSION['userId'])) {
+            echo '<p class="login-status">You are logged in!</p>';
+          }
+          else {
+            echo '<p class="login-status">You are logged out!</p>';
           }
           ?>
           <p class="login-status">You are logged out!</p>
